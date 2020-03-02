@@ -1,8 +1,8 @@
 package model;
 
 public class Profilo {
-	Long idProfilo;
-	String ruolo;
+	private Long idProfilo;
+	private String ruolo;
 	
 	public Profilo() {
 	}
