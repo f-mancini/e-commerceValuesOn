@@ -1,0 +1,8 @@
+user = admin 
+password = admin
+jdbc = com.mysql.jdbc.Driver
+indirizzo = localhost
+porta = 3306
+db = sportdb
+
+
