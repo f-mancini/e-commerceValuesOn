@@ -10,14 +10,18 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
-@WebServlet(name="/ServletGestioneMagazzino", urlPatterns = {"/gestioneMagazzino.jsp"})
-public class ServletGestioneMagazzino extends HttpServlet {
+/**
+ * Servlet implementation class ServletGestioneOrdine
+ */
+@WebServlet(name = "ServletGestioneOrdine", urlPatterns = {"*.do"})
+public class ServletGestioneOrdine extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	
+	
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        
         
         StringBuffer str = new StringBuffer(request.getServletPath());
         String comando = str.substring(1,str.lastIndexOf(".do"));
@@ -31,20 +35,13 @@ public class ServletGestioneMagazzino extends HttpServlet {
                 break;
             
             case "logout":
-            		
-            	break;
-            	
-            case "inserisci":	
                
-                break; 
+                break;
                 
-            case "modifica":	
-                
-                break; 
-                
-            case "rimuovi":	
-                
-                break; 
+            case "invia":
+            	
+            	break;
+                                          
                               
         }
         sc = getServletContext();
@@ -52,4 +49,5 @@ public class ServletGestioneMagazzino extends HttpServlet {
         rd.forward(request, response);
 	}
 
+	
 }

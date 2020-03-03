@@ -19,7 +19,7 @@ th, td {
 <body>
 	<h1>Gestione Magazzino</h1>
 	<button type="button">Cerca</button>
-	<button type="button">Esci</button>
+	<button type="button">Logout</button>
 	<br>
 	<br>
 	<button type="button">Inserisci</button>

@@ -18,14 +18,14 @@
   <input type="text" placeholder="E-mail"><br><br>
  
     <label >Password</label><br>
-  <input type="text" placeholder="Password"><br><br>
+  <input type="password" placeholder="Password"><br><br>
  
   <label >Conferma password</label><br>
-  <input type="text" placeholder="Conferma password"><br><br>
+  <input type="password" placeholder="Conferma password"><br><br>
   
   <p>Eventuale messaggio di errore relativo ai campi!</p>
   
-    <input type="submit" value="Utente buyer &#x2714;">  <input type="submit" value="Utente magazziniere &#x2714;">
+    <input type="submit" value="Utente buyer &#x2714;">  <input type="submit" value="Utente magazziniere &#x2714;"> <br><br>
   
     <input type="submit" value="Conferma">  <input type="submit" value="Annulla">
 </body>
