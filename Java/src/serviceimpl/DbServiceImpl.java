@@ -7,7 +7,7 @@ import java.sql.Statement;
 import repository.DatabaseConnection;
 
 public class DbServiceImpl {
-
+/*
 	public static void main(String[] args) throws SQLException {
 		DatabaseConnection conn = new DatabaseConnection();
 		Statement stmt = null;
@@ -34,5 +34,5 @@ public class DbServiceImpl {
 		System.out.println("Tabella creata...");
 		((Connection) conn).close();
 	}
-
+*/
 }
