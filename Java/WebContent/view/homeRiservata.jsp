@@ -10,11 +10,11 @@
 
 <h2>Benvenuto nella tua area riservata!</h2>
 <br>
-<button routerLink="/view-carrello">Visualizza carrello</button>
+<button onClick="location.href= 'carrello.jsp'">Visualizza carrello</button>
 &nbsp;
-<a routerLink="/view/homePubblica.jsp">
-  <button>Logout</button>
-</a>
+
+  <button onClick="location.href= 'homePubblica.jsp'">Logout</button>
+
 <br>
 <br>
 <hr>
