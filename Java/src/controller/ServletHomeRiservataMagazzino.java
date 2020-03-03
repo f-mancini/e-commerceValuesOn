@@ -11,8 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name="/ServletGestioneMagazzino", urlPatterns = {"/gestioneMagazzino.jsp"})
-public class ServletGestioneMagazzino extends HttpServlet {
+@WebServlet(name="/ServletHomeRiservataMagazzino", urlPatterns = {"/homeRiservataMagazzino.jsp"})
+public class ServletHomeRiservataMagazzino extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -26,25 +26,17 @@ public class ServletGestioneMagazzino extends HttpServlet {
         ServletContext sc;
         
         switch(comando){
-            case "cerca":
+            case "logout":
                
                 break;
             
-            case "logout":
+            case "gestione magazzino":
             		
             	break;
             	
-            case "inserisci":	
+            case "gestione ordini":	
                
-                break; 
-                
-            case "modifica":	
-                
-                break; 
-                
-            case "rimuovi":	
-                
-                break; 
+                break;                           
                               
         }
         sc = getServletContext();
