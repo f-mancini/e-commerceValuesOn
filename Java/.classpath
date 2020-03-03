@@ -15,6 +15,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="mssql-jdbc-8.2.1.jre13.jar"/>
-	<classpathentry kind="lib" path="servlet-api.jar"/>
+	<classpathentry kind="lib" path="conf.properties"/>
+	<classpathentry kind="lib" path="C:/Users/Values On HP/Documents/J4J/e-commerceValuesOn/Java/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
