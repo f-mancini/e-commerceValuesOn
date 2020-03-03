@@ -6,10 +6,14 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
+
 public class DatabaseConnection {
-	public static Connection getConnection() throws SQLException {
+	
+	Connection conn;
+	public Connection getConnection() throws SQLException {
 		FileReader fr = null;
 		Properties p = null;
 		try {
@@ -31,10 +35,39 @@ public class DatabaseConnection {
 		
 		String url = "jdbc:" + jdbc + "://" + indirizzo + ":" + porta + "/" + db + "?ServerTimezone=Europe/Rome";
 		
-		Connection conn = DriverManager.getConnection(url, user, password);
+		conn = DriverManager.getConnection(url, user, password);
 		
 		return conn;
 		
 	}
+	
+	public void creazioneTabelle() throws SQLException {
+		Statement stmt = null;
+		DatabaseConnection dbConn = new DatabaseConnection();
+	// Apro la connessione
+	System.out.println("Connessione al server...");
+	dbConn.getConnection();
+	System.out.println("Connessione eseguita");
+	
+	
+	// Eseguo la query
+	System.out.println("Creazione tabelle...");
+	stmt =  conn.createStatement();
+	
+	String sql = "CREATE TABLE UTENTE" +
+				 "(idUtente INT not NULL AUTOINCREMENT," +
+				 "nome VARCHAR(30)," +
+				 "cognome VARCHAR(30)," +
+				 "username VARCHAR(30)," +
+				 "password VARCHAR(30)," +
+				 "mail VARCHAR(30))"; 
+	
+	stmt.executeUpdate(sql);
+	System.out.println("Tabella creata...");
+	conn.close();
+	
+	}
 }
+
+
 
