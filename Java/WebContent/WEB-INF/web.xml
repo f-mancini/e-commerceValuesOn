@@ -9,6 +9,7 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>view/login.jsp</welcome-file>
+    <welcome-file>view/homeRiservataAmministratore.jsp</welcome-file>
     <welcome-file>view/homePubblica.jsp</welcome-file>
     <welcome-file>view/registrazione.jsp</welcome-file>
     <welcome-file>view/registrazioneAmministratore.jsp</welcome-file>
