@@ -45,7 +45,6 @@ package repository;
 			System.out.println("Connessione al server...");
 			conn = getConnection();
 			System.out.println("Connessione eseguita...");
-			
 			System.out.println("Creazione tabelle...");
 			stmt = conn.createStatement();
 			

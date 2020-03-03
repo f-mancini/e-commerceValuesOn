@@ -18,4 +18,14 @@
     <welcome-file>view/gestioneOrdine.jsp</welcome-file>
     <welcome-file>view/homeRiservataMagazzino.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Servletdb</servlet-name>
+  	<jsp-file>view.login.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Servletdb</servlet-name>
+  <url-pattern>/controller/*</url-pattern>
+</servlet-mapping>
 </web-app>
