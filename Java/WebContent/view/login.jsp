@@ -36,12 +36,15 @@ border: solid 1px black;
 </style>
 <body>
 <a class ="titolo" href ="http//localhost:8080/e-commerceSport/">ValueSport!</a><br><br>
-<form>
+<form>	
 <label >Username</label><br>
   <input type="text" placeholder="Inserisci username"><br><br>
   <label >Password</label><br>
   <input type="text" placeholder="Inserisci password"><br><br>
   <a href="http://localhost:8080/e-commerceSport/view/passwordDimenticata.jsp">Password dimenticata?</a>
+  <br><br>
+  <input type = "button" value="Login" onclick="location.href='homeRiservata.jsp'"> &nbsp;
+  <input type = "button" value="Annulla" onclick="location.href='homePubblica.jsp'"><br><br>
   </form>
 </body>
 </html>
