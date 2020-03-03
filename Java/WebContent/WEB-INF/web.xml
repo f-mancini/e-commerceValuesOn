@@ -9,5 +9,12 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>view/login.jsp</welcome-file>
+    <welcome-file>view/homePubblica.jsp</welcome-file>
+    <welcome-file>view/registrazione.jsp</welcome-file>
+    <welcome-file>view/registrazioneAmministratore.jsp</welcome-file>
+    <welcome-file>view/passwordDimenticata.jsp</welcome-file>
+    <welcome-file>view/gestioneMagazzino.jsp</welcome-file>
+    <welcome-file>view/gestioneOrdine.jsp</welcome-file>
+    <welcome-file>view/homeRiservataMagazzino.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
