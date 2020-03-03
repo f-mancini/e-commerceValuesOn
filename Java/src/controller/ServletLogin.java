@@ -10,7 +10,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 
 
-@WebServlet(name = "ServletLogin", urlPatterns = {"*.do"})
+@WebServlet(name = "ServletLogin", urlPatterns = {"/login.jsp"})
 public class ServletLogin extends HttpServlet {
 	private static final long serialVersionUID = 2L;
        
