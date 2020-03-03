@@ -18,10 +18,10 @@
   <input type="text" placeholder="E-mail"><br><br>
  
     <label >Password</label><br>
-  <input type="text" placeholder="Password"><br><br>
+  <input type="password" placeholder="Password"><br><br>
  
   <label >Conferma password</label><br>
-  <input type="text" placeholder="Conferma password"><br><br>
+  <input type="password" placeholder="Conferma password"><br><br>
   
   <p>Eventuale messaggio di errore relativo ai campi!</p>
   
