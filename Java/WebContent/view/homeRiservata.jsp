@@ -7,13 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
- 
-<h2>Benvenuto nel Ecommerce!</h2>
+
+<h2>Benvenuto nella tua area riservata!</h2>
 <br>
 <button routerLink="/view-carrello">Visualizza carrello</button>
 &nbsp;
-<a routerLink="/view/login.jsp">
-  <button>Login</button>
+<a routerLink="/view/homePubblica.jsp">
+  <button>Logout</button>
 </a>
 <br>
 <br>
@@ -42,7 +42,6 @@
       <td><input type="submit" value="Aggiungi al carello"> &nbsp;</td>
     </tr>  
   </table>
-
 
 </body>
 </html>

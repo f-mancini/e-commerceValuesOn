@@ -27,6 +27,6 @@
   
     <input type="submit" value="Utente buyer &#x2714;">  <input type="submit" value="Utente magazziniere &#x2714;"> <br><br>
   
-    <input type="submit" value="Conferma">  <input type="submit" value="Annulla">
+    <button onclick="location.href='homePubblica.jsp'">Comferma</button> <input type="submit" value="Annulla">
 </body>
 </html>
