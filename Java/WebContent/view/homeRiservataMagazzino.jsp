@@ -15,16 +15,16 @@ div {
 <title>HomeRiservataMagazzino</title>
 </head>
 <body>
-	<div id>
+	<div>
 		<h1>Benvenuto</h1>
 		<div align="right">
 			<button type="button">Logout</button>
 		</div>
 		<br> 
 		<div align="center">
-			<button type="button">Gestione Magazzino</button>
+			<button type="button" onclick="location.href = 'gestioneMagazzino.jsp">Gestione Magazzino</button>
 			&nbsp;
-			<button type="button">Gestione Ordini</button>
+			<button type="button" onclick="location.href='gestioneOrdine.jsp'">Gestione Ordini</button>
 		</div>
 	</div>
 </body>
