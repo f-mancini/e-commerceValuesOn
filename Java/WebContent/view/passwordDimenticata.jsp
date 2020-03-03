@@ -12,6 +12,8 @@
 <label>Conferma password</label><br><br>
 <input type = "text" placeholder="conferma"> <br><br>
 <input type = "button" value="Conferma" onclick="cambioPassword()"> &nbsp;
-<input type = "button" value="Annulla" (click)="/login.jsp"><br><br>
+<input type = "button" value="Annulla" onclick="location.href='login.jsp'"><br><br>
 </body>
 </html>
+
+

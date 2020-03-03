@@ -20,13 +20,14 @@ background-color:blue;
 h1{
 color:white;
 }
-
+form{border-color:grey;}
 a{
 color:darkblue;
+
 }
 
 a.titolo{
-color:white;
+color:darkblue;
 text-decoration: none;
 }
 form{
@@ -34,20 +35,13 @@ border: solid 1px black;
 }
 </style>
 <body>
-<div>
-<a class= "titolo" href="http://localhost:8080/e-commerce/home-pubblica.jsp"> ValueSport!</h1>
-</div>
+<a class ="titolo" href ="http//localhost:8080/e-commerceSport/">ValueSport!</a><br><br>
 <form>
-<br><br>
-<label>Username</label><br><br>
-<input type = "text" placeholder="Inserisci username"><br><br>
-<label>Password</label><br><br>
-<input type = "text" placeholder="Inserisci password"> <br><br>
-<a href="http://localhost:8080/e-commerceSport/password-dimenticata.jsp">Password dimenticata?</a><br><br>
-</form>
-<br><br>
-<input type = "button" value="Login" onclick="login()"> &nbsp;
-<input type = "button" value="Annulla" (click)=""><br><br>
-
+<label >Username</label><br>
+  <input type="text" placeholder="Inserisci username"><br><br>
+  <label >Password</label><br>
+  <input type="text" placeholder="Inserisci password"><br><br>
+  <a href="http://localhost:8080/e-commerceSport/view/passwordDimenticata.jsp">Password dimenticata?</a>
+  </form>
 </body>
 </html>

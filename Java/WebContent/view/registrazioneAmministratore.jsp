@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Registrazione</title>
+<title>Registrazione amministratore</title>
 </head>
 <body>
 
@@ -27,6 +27,8 @@
   
     <input type="submit" value="Utente buyer &#x2714;">  <input type="submit" value="Utente magazziniere &#x2714;"> <br><br>
   
-    <button onclick="location.href='homePubblica.jsp'">Comferma</button> <input type="submit" value="Annulla">
+    <button onclick="location.href='homeRiservataAmministratore.jsp'">Comferma</button> 
+    
+    <button onclick="location.href='homeRiservataAmministratore.jsp'">Annulla</button> 
 </body>
 </html>
