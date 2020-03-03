@@ -27,6 +27,8 @@
   
     <input type="submit" value="Utente buyer &#x2714;">  <input type="submit" value="Utente magazziniere &#x2714;"> <br><br>
   
-    <button onclick="location.href='homeRiservataAmministratore.jsp'">Comferma</button> <input type="submit" value="Annulla">
+    <button onclick="location.href='homeRiservataAmministratore.jsp'">Comferma</button> 
+    
+    <button onclick="location.href='homeRiservataAmministratore.jsp'">Annulla</button> 
 </body>
 </html>
