@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet(name="/ServletHomeRiservataMagazzino", urlPatterns = {"/homeRiservataMagazzino.jsp"})
+@WebServlet(name="/ServletHomeRiservataMagazzino", urlPatterns = {"/homeriservatamagazzino.jsp"})
 public class ServletHomeRiservataMagazzino extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        

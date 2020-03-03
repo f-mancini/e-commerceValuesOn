@@ -10,7 +10,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 
 
-@WebServlet(name = "ServletRegistrazioneAmministratore", urlPatterns = {"*.do"})
+@WebServlet(name = "ServletRegistrazioneAmministratore", urlPatterns = {"/registrazioneAmministratore.jsp"})
 public class ServletRegistrazioneAmministratore extends HttpServlet {
 	private static final long serialVersionUID = 3L;
        

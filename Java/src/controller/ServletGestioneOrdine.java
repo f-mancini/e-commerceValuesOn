@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class ServletGestioneOrdine
  */
-@WebServlet(name = "ServletGestioneOrdine", urlPatterns = {"*.do"})
+@WebServlet(name = "ServletGestioneOrdine", urlPatterns = {"/gestioneordine.jsp"})
 public class ServletGestioneOrdine extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
