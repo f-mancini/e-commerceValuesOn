@@ -1,20 +1,20 @@
 package controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 
 
-@WebServlet(name = "ServletRegistrazioneAmministratore", urlPatterns = {"/registrazioneAmministratore.jsp"})
-public class ServletRegistrazioneAmministratore extends HttpServlet {
-	private static final long serialVersionUID = 3L;
+@WebServlet(name="/ServletHomeRiservataMagazzino", urlPatterns = {"/homeriservatamagazzino.jsp"})
+public class ServletHomeRiservataMagazzino extends HttpServlet {
+	private static final long serialVersionUID = 1L;
        
-    
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
@@ -26,22 +26,17 @@ public class ServletRegistrazioneAmministratore extends HttpServlet {
         ServletContext sc;
         
         switch(comando){
-            case "utentebuyer":
-            
-            break;
-        
-            case "utentemagazziniere":
-           
-            break;
-            
-            case "conferma":
+            case "logout":
                
-            break;
+                break;
             
-            case "annulla":
+            case "gestione magazzino":
+            		
+            	break;
+            	
+            case "gestione ordini":	
                
-            break;
-                                          
+                break;                           
                               
         }
         sc = getServletContext();
@@ -49,5 +44,4 @@ public class ServletRegistrazioneAmministratore extends HttpServlet {
         rd.forward(request, response);
 	}
 
-	
 }
