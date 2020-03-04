@@ -14,8 +14,9 @@ package repository;
 			FileReader fr = null;
 			Properties p = null;
 			try {
-				fr = new FileReader("conf.properties");
-				p = new Properties();
+			fr = new FileReader("C:\\Users\\Values On HP\\Documents\\J4J\\e-commerceValuesOn\\Java\\WebContent\\WEB-INF\\lib\\conf.properties");
+			
+			p = new Properties();
 				p.load(fr);
 			} catch (FileNotFoundException e) {
 				System.out.println("File conf.properties non trovato" + e);
