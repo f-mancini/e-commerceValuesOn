@@ -14,37 +14,32 @@ import repository.DatabaseConnection;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 
-
-@WebServlet(name = "ServletLogin", urlPatterns = {"/login.jsp"})
+@WebServlet("/ServletLogin")
 public class ServletLogin extends HttpServlet {
-	private static final long serialVersionUID = 2L;
+	private static final long serialVersionUID = 1L;
        
-    
-	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
-        StringBuffer str = new StringBuffer(request.getServletPath());
-        String comando = str.substring(1,str.lastIndexOf(".do"));
-        String pagina ="";
-        RequestDispatcher rd;
-        ServletContext sc;
-        
-        switch(comando){
-            case "login":
-               
-                break;
-            
-            case "annulla":
-               
-                break;
-                                          
-                              
-        }
-        sc = getServletContext();
-        rd = sc.getRequestDispatcher(pagina);
-        rd.forward(request, response);
-        
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public ServletLogin() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
-	
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		doGet(request, response);
+	}
+
 }
