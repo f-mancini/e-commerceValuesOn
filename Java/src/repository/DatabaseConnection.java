@@ -5,8 +5,8 @@ package repository;
 	import java.io.IOException;
 	import java.sql.Connection;
 	import java.sql.DriverManager;
+	import java.sql.PreparedStatement;
 	import java.sql.SQLException;
-	import java.sql.Statement;
 	import java.util.Properties;
 
 	public class DatabaseConnection {
@@ -41,13 +41,13 @@ package repository;
 		
 		public static void creazioneTabelle() throws SQLException {
 			Connection conn;
-			Statement stmt;
+			PreparedStatement stmt;
 			
 			System.out.println("Connessione al server...");
 			conn = getConnection();
 			System.out.println("Connessione eseguita...");
 			System.out.println("Creazione tabelle...");
-			stmt = conn.createStatement();
+			stmt = (PreparedStatement) conn.createStatement();
 			
 			String sql = "CREATE TABLE UTENTE" +
 						 "(idUtente INT not NULL AUTOINCREMENT," +
