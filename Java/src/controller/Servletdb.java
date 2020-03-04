@@ -18,10 +18,16 @@ import repository.DatabaseConnection;
 public class Servletdb extends HttpServlet {
 	private static final long serialVersionUID = 7L;
     
-  
-	@Override
+	public Servletdb() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		 try {
+		resp.getWriter().append("Served at: ").append(req.getContextPath());
+		
+		try {
 			DatabaseConnection.creazioneTabelle();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -29,7 +35,7 @@ public class Servletdb extends HttpServlet {
 		}
 	}
 
-	@Override
+	
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		doGet(req, resp);
 	}
