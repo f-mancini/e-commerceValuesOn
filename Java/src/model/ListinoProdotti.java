@@ -5,6 +5,7 @@ public class ListinoProdotti {
 	private int idProddotto;
 	private double prezzo;
 	
+	
 	public ListinoProdotti() {
 		super();
 	}
