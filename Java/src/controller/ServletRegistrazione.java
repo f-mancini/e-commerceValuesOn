@@ -6,6 +6,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import model.Utente;
+import model.dao.Eccezione;
+import model.dao.RegistrazioneDao;
+import model.ListaUtenti;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 
@@ -16,7 +22,7 @@ public class ServletRegistrazione extends HttpServlet {
        
     
 	protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException, Eccezione {
         response.setContentType("text/html;charset=UTF-8");
         
         StringBuffer str = new StringBuffer(request.getServletPath());
@@ -26,16 +32,30 @@ public class ServletRegistrazione extends HttpServlet {
         ServletContext sc;
         
         switch(comando){
-            case "conferma":
+            case "registrati":
+            	//prendo i parametri inseriti dell'utente nel form registrazione e creo l'oggetto utente
+            	Long id = null;
+            	String nome = request.getParameter("nome");
+            	String cognome = request.getParameter("cognome");
+            	String username = request.getParameter("username");
+            	String password = request.getParameter("password");
+            	String mail = request.getParameter("mail");
+            	Utente utente = new Utente(id, nome, cognome, username, password, mail);
+            	
+            	//eseguo il metodo "registrati" della classe Registrazione.dao sull'utente, inserendolo nel db
+            	RegistrazioneDao.registrati(utente);
+            	
+            	//aggiungo l'utente anche nella listaUtenti
+            	ListaUtenti lista = RegistrazioneDao.lista(request); 
+            	lista.aggiungi(utente);
+            	
+            	//Se la registrazione è andata a buon fine va a homeRiservata
+            	pagina = "/homeRiservata.jsp";
                
                 break;
             
-            case "annulla":
-               
-                break;
-                                          
-                              
-        }
+            
+       }
         sc = getServletContext();
         rd = sc.getRequestDispatcher(pagina);
         rd.forward(request, response);

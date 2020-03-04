@@ -3,7 +3,9 @@ package model.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import javax.servlet.http.HttpServletRequest;
 import model.Utente;
+import model.ListaUtenti;
 import repository.DatabaseConnection;
 import model.dao.Eccezione;
 
@@ -53,4 +55,19 @@ public class RegistrazioneDao {
        
           
 	}
+	
+	public static ListaUtenti lista(HttpServletRequest request){
+        ListaUtenti lista = ((ListaUtenti)request.getSession().getAttribute("lista"));
+        if(lista == null)
+            return new ListaUtenti();
+        else
+           return lista;
+   }
+	
+	public static ListaUtenti aggiungi(HttpServletRequest request, Utente utente){
+	       ListaUtenti lista = lista(request);	                    
+	        lista.aggiungi(utente);
+	        return lista;
+
+	    }
 }
