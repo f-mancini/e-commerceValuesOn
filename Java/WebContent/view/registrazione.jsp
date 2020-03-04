@@ -25,6 +25,7 @@
   
   <p>Eventuale messaggio di errore relativo ai campi!</p>
   
-    <input type="submit" value="Conferma">  <input type="submit" value="Annulla">
+    <input type="submit" value="Conferma" onclick="location.href='homeRiservata.jsp'">  
+    <input type="submit" value="Annulla" onclick="location.href='homePubblica.jsp'">
 </body>
 </html>
