@@ -39,7 +39,7 @@ border: solid 1px black;
 }
 </style>
 <body>
-<a class ="titolo" href ="http//localhost:8080/e-commerceSport/view/homePubblica.jsp">ValueSport!</a><br><br>
+<a class ="titolo" href ="http://localhost:8080/e-commerceSport/view/homePubblica.jsp">ValueSport!</a><br><br>
 <form>	
 <label >Username</label><br>
   <input type="text" placeholder="Inserisci username"><br><br>
