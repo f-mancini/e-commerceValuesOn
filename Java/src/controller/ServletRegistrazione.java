@@ -10,7 +10,7 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 
 
-@WebServlet(name = "ServletRegistrazione", urlPatterns = {"/registrazione.jsp"})
+@WebServlet("ServletRegistrazione")
 public class ServletRegistrazione extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -39,6 +39,20 @@ public class ServletRegistrazione extends HttpServlet {
         sc = getServletContext();
         rd = sc.getRequestDispatcher(pagina);
         rd.forward(request, response);
+	}
+
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doGet(req, resp);
+	}
+
+
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		super.doPost(req, resp);
 	}
 
 	
