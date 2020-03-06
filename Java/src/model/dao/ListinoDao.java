@@ -6,6 +6,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
+import model.ListaListini;
+import model.ListaUtenti;
 import model.Listino;
 import repository.DatabaseConnection;
 
@@ -48,6 +52,17 @@ public class ListinoDao {
 		    		throw new Eccezione(ex.getMessage());
 		    	}
 		    }
+	}
+	
+	
+	
+	public static ListaListini lista(HttpServletRequest request) {
+		ListaListini lista = (ListaListini) request.getSession().getAttribute("listaListini");
+		if(lista == null)
+            return new ListaListini();
+        else
+        	return lista;
+		
 	}
 	
 	

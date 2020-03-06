@@ -1,22 +1,19 @@
 package model;
 
-import java.util.List;
 
 public class Listino {
 	private Long idListino;
 	private String dataInizio;
 	private String dataFine;
-	private List<Prodotto> listino;	
 	
 	public Listino() {
 	}
 
-	public Listino(Long idListino, String dataInizio, String dataFine, List<Prodotto> listino) {
+	public Listino(Long idListino, String dataInizio, String dataFine) {
 		super();
 		this.idListino = idListino;
 		this.dataInizio = dataInizio;
 		this.dataFine = dataFine;
-		this.listino = listino;
 	}
 
 	public Long getIdListino() {
@@ -43,13 +40,7 @@ public class Listino {
 		this.dataFine = dataFine;
 	}
 	
-	public List<Prodotto> getListino() {
-		return listino;
-	}
 	
-	public void setListino(List<Prodotto> listino) {
-		this.listino = listino;
-	}
 	
 	
 }
