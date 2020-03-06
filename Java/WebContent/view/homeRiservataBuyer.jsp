@@ -31,9 +31,12 @@ th, td {
 	<br>
 	<br>
 	<br>
-		<select id = "listino" size = "listini[]">
+		<select id = "listino" size = "listaListini">
 			<option>
-				
+				<%
+					// FIXME 
+					//estarre la lista dei listini completa per popolare la select
+				 %>
 			</option>
 		</select>
 		<button type = "button" onclick = "location.href = 'modificaListini.jsp'">Modifica listino selezionato</button>
